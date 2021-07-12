@@ -1,9 +1,12 @@
 import styled from "styled-components"
+import ImageSlider from "./ImageSlider"
+
+
 
 function Home() {
     return (
         <Container>
-             This Home
+            <ImageSlider />
         </Container>
     )
 }

@@ -37,6 +37,7 @@ function Header() {
             </NavMenu>
 
             <UserImg src='images/ben.jpg'/>
+
         </Nav>
     )
 }
@@ -47,9 +48,9 @@ export default Header
 const Nav = styled.nav`
     height: 70px;
     background: #090b13;
-    display:    flex;
-    align-items:    center;
-    padding:    0 36px;
+    display:  flex;
+    align-items: center;
+    padding: 0 36px;
     overflow: hidden;
 
 `
@@ -97,7 +98,7 @@ const NavMenu = styled.div`
 
         &:hover {
             span:after {
-                transform: scalex(1);
+                transform: scaleX(1);
                 opacity: 1;
             }
         }

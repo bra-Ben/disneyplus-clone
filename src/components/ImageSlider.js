@@ -22,6 +22,7 @@ function ImageSlider() {
             <Wrap>
                 <img src='/images/slider-badag.jpg' />
             </Wrap>
+            
 
         </Carousel>
     )

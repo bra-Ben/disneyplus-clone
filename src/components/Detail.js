@@ -24,14 +24,16 @@ function Detail() {
                     <span>Trailer</span>   
                 </TrailerButton>
                 <AddButton>
-
+                    <span>+</span>
                 </AddButton>
                 <GroupWatchButton>
-
+                    <img src="/images/group-icon.png" />
                 </GroupWatchButton>
             </Controls>
 
-
+            <SubTitle>
+                
+            </SubTitle>
 
         </Container>
     )
@@ -81,30 +83,58 @@ const ImageTitle = styled.div`
 
 const Controls = styled.div`
     display: flex;
-
+    align-items: center;
 
 `
 
-const PlayButton = styled.div`
+const PlayButton = styled.button`
     border-radius: 4px;
+    padding: 0px 24px;
+    margin-right: 22px;
     font-size: 15px;
     display: flex;
     align-items: center;
     height: 56px;
     background: rgb (249, 249, 249);
     border: none;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+
+    &:hover {
+        background: rgb(198, 198, 198);
+    }
+`
+
+// the stlyes from PlayButton was imported into TrailerButton using 
+// the command below this:
+const TrailerButton = styled(PlayButton)`
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(249, 249, 249);
+    color: rgb(249, 249, 249);
+    text-transform: uppercase;
 
 `
 
-const TrailerButton = styled.div`
+const AddButton = styled.button`
+    margin-right: 16px;    
+width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+
+    span {
+        font-size: 30px;
+        color: white;
+
+    }
 
 `
-
-const AddButton = styled.div`
-
-
-`
-const GroupWatchButton = styled.div`
+const GroupWatchButton = styled(AddButton)`
 
 
 `
